@@ -1,0 +1,5 @@
+_module: mkite_engines.redis
+host: YOUR_REDIS_HOST
+port: YOUR_REDIS_PORT
+password: YOUR_REDIS_PASSWORD
+
