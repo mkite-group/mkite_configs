@@ -1,0 +1,28 @@
+default:
+  nodes: 1
+  tasks_per_node: 1
+  walltime: "24:00:00"
+  pre_cmd: |
+    source $HOME/.jobrc
+    source $HOME/envs/mkite/bin/activate
+  cmd: kite run
+  post_cmd: |
+    touch mkwind-complete
+
+catalysis.surfgen:
+  nodes: 1
+  tasks_per_node: 1
+  walltime: 30:00
+  cmd: kite run
+
+catalysis.adsorption:
+  nodes: 1
+  tasks_per_node: 1
+  walltime: 30:00
+  cmd: kite run
+
+conformer.generation:
+  nodes: 1
+  tasks_per_node: 1
+  walltime: 24:00:00
+  cmd: kite run

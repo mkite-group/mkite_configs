@@ -1,0 +1,19 @@
+default:
+  nodes: 1
+  gpus: 4
+  tasks_per_node: 4
+  walltime: "12:00"
+  partition: partition
+  account: account
+  pre_cmd: |
+    source $HOME/.jobrc
+    source $HOME/envs/mkite/bin/activate
+  cmd: kite run
+  post_cmd: |
+    touch mkwind-complete
+
+vasp:
+  pre_cmd: |
+    source $HOME/.jobrc
+    source $HOME/envs/mkite/bin/activate
+    module load vasp
