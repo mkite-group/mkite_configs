@@ -1,0 +1,9 @@
+MAX_PENDING: 10
+MAX_RUNNING: 5
+MAX_READY: 100
+SCHEDULER: pueue
+LOG_PATH: $HOME/logs
+BUILD_CONFIG: ${_self_}/../clusters/local.yaml
+ENGINE_LOCAL: ${_self_}/../engines/local-jobs.yaml
+ENGINE_EXTERNAL: ${_self_}/../engines/redis-cloud.yaml
+ENGINE_ARCHIVE: ${_self_}/../engines/local-archive.yaml

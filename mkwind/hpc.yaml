@@ -1,0 +1,9 @@
+MAX_PENDING: 20
+MAX_RUNNING: 450
+MAX_READY: 10
+SCHEDULER: slurm
+LOG_PATH: $HOME/logs
+BUILD_CONFIG: ${_self_}/../clusters/cpu.yaml
+ENGINE_LOCAL: ${_self_}/../engines/hpc-jobs.yaml
+ENGINE_EXTERNAL: ${_self_}/../engines/redis-cloud.yaml
+ENGINE_ARCHIVE: ${_self_}/../engines/hpc-archive.yaml
